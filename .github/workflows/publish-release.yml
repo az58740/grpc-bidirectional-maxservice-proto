@@ -19,6 +19,6 @@ jobs:
           - name: Install dependencies
             run: |
               go get .
-              go get github.com/az58740/gRPC_BiDirectional_Microservice.git
-              go get github.com/az58740/gRPC_BiDirectional_Microservice.git/max/proto@v1.0.1
+              go get github.com/az58740/gRPC_BiDirectional_Microservice
+              go get github.com/az58740/gRPC_BiDirectional_Microservice/max/proto@v1.0.1
               
