@@ -1,7 +1,6 @@
 syntax = "proto3";
 
-package proto;
-option go_package="github.com/az58740/grpc-bidirectional-maxservice/max/proto";
+option go_package="github.com/az58740/grpc-bidirectional-maxservice-proto/max";
 
 message MaxRequest{
     int32 number = 1;

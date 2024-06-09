@@ -2,9 +2,9 @@
 // versions:
 // - protoc-gen-go-grpc v1.3.0
 // - protoc             v5.27.0--rc1
-// source: max.proto
+// source: max/max.proto
 
-package proto
+package max
 
 import (
 	context "context"
@@ -19,7 +19,7 @@ import (
 const _ = grpc.SupportPackageIsVersion7
 
 const (
-	MaxService_FindMax_FullMethodName = "/proto.MaxService/FindMax"
+	MaxService_FindMax_FullMethodName = "/MaxService/FindMax"
 )
 
 // MaxServiceClient is the client API for MaxService service.
@@ -128,7 +128,7 @@ func (x *maxServiceFindMaxServer) Recv() (*MaxRequest, error) {
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var MaxService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "proto.MaxService",
+	ServiceName: "MaxService",
 	HandlerType: (*MaxServiceServer)(nil),
 	Methods:     []grpc.MethodDesc{},
 	Streams: []grpc.StreamDesc{
@@ -139,5 +139,5 @@ var MaxService_ServiceDesc = grpc.ServiceDesc{
 			ClientStreams: true,
 		},
 	},
-	Metadata: "max.proto",
+	Metadata: "max/max.proto",
 }
